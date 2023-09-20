@@ -25,7 +25,7 @@
 #define WRITE_BUF_SIZE 1024
 #define BUF_FLUSH -1
 
-/* To check command chain*/
+/* To Det'mine command chain*/
 #define CMD_NORM	0
 #define CMD_OR		1
 #define CMD_AND		2
@@ -51,7 +51,7 @@ typedef struct liststr
 list_t;
 
 /**
- * struct passinfo - Holds pseudo-arg to pass into function,
+ * struct passinfo - finds pseudo-arg to pass into function,
  * allows uniform prototype for function pointer struct
  * @arg:The string generated from getline contains arg
  * @argv:Is array of strings from arg
@@ -65,7 +65,7 @@ list_t;
  * @environ: custom modified copy of environ from LL env
  * @history: Node to history
  * @alias: Node for alias
- * @env_changed: When enveron is changed
+ * @env_changed: When env is changed
  * @status: Return status of the last passed command
  * @cmd_buf: address to pointer to cmd_buf, on if chaining
  * @cmd_buf_type: CMD_type ||, &&, ;
