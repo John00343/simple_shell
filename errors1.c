@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * _erratoi - converts a string to an integer
- * @s: the string to be converted
- * Return: 0 if no numbers in string, converted number otherwise
+ * _erratoi - Changes a string to an int
+ * @s: the string being converted
+ * Return: (0) if no numbers in string, ELSE converted number 
  *       -1 on error
  */
 int _erratoi(char *s)
@@ -12,7 +12,7 @@ int _erratoi(char *s)
 	unsigned long int result = 0;
 
 	if (*s == '+')
-		s++;  /* TODO: why does this make main return 255? */
+		s++;  
 	for (i = 0;  s[i] != '\0'; i++)
 	{
 		if (s[i] >= '0' && s[i] <= '9')
@@ -29,10 +29,10 @@ int _erratoi(char *s)
 }
 
 /**
- * print_error - prints an error message
- * @info: the parameter & return info struct
- * @estr: string containing specified error type
- * Return: 0 if no numbers in string, converted number otherwise
+ * print_error - Will print  error message
+ * @info: the parameter & Return info struct
+ * @estr: string contains specified error type
+ * Return: 0 if NILL int in string, converted number else
  *        -1 on error
  */
 void print_error(info_t *info, char *estr)
@@ -47,11 +47,11 @@ void print_error(info_t *info, char *estr)
 }
 
 /**
- * print_d - function prints a decimal (integer) number (base 10)
+ * print_d - function will prints decimal (int) number (base 10)
  * @input: the input
  * @fd: the filedescriptor to write to
  *
- * Return: number of characters printed
+ * Return: number of char printed
  */
 int print_d(int input, int fd)
 {
@@ -86,7 +86,7 @@ int print_d(int input, int fd)
 }
 
 /**
- * convert_number - converter function, a clone of itoa
+ * convert_number - Is converter function, a clone of itoa
  * @num: number
  * @base: base
  * @flags: argument flags
@@ -122,10 +122,10 @@ char *convert_number(long int num, int base, int flags)
 }
 
 /**
- * remove_comments - function replaces first instance of '#' with '\0'
- * @buf: address of the string to modify
+ * remove_comments - WIll replace first instance of '#' with '\0'
+ * @buf: address of String to modify
  *
- * Return: Always 0;
+ * Return: Return Always 0;
  */
 void remove_comments(char *buf)
 {
