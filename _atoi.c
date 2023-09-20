@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * interactive - returns  code to be true if shell is in interactive mode
- * @info: the structure address
+ * interactive - Will check if shell is in interactive mod
+ * @info: The Struct addres
  *
- * Return: if interactive in  mode return 1, 0 otherwise
+ * Return: 1 0N SUCCESS ,ELSE 0.
  */
 int interactive(info_t *info)
 {
@@ -12,10 +12,10 @@ int interactive(info_t *info)
 }
 
 /**
- * is_delim - checks if character is a delimeter
- * @c: character  to check
- * @delim: delimeter string
- * Return: if true return 1, if false return 0
+ * is_delim - CHECK if c - DELIMETER
+ * @c: Char being checked
+ * @delim: A delimeter string
+ * Return: 1 returned true, 0 returned IF false.
  */
 int is_delim(char c, char *delim)
 {
@@ -26,9 +26,9 @@ int is_delim(char c, char *delim)
 }
 
 /**
- * _isalpha - checks for alphabetic character
- * @c: The character to input
- * Return: if c is alphabetic return 1, otherwise return 0
+ * _isalpha - Looks for alphabet char
+ * @c: The char inputed
+ * Return: 1 returned if c is ALPHA,Else 0.
  */
 
 int _isalpha(int c)
@@ -40,9 +40,9 @@ int _isalpha(int c)
 }
 
 /**
- * _atoi - converts the  string to an integer
- * @s: string to be converted
- * Return:  if no numbers in string return 0,  otherwise converted number 
+ * _atoi - Change string to integer
+ * @s: String Being  converted
+ * Return:  if String is NULL return 0, ELSE  converted number 
  */
 
 int _atoi(char *s)
