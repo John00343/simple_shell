@@ -13,7 +13,7 @@ int _myenv(info_t *info)
 
 /**
  * _getenv - Gets value of environ var
- * @info:  Is struct Holding potential arguments. 
+ * @info:  Is struct Holding potential arguments.
  * @name: env var name
  *
  * Return: the value

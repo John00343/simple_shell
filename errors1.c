@@ -3,7 +3,7 @@
 /**
  * _erratoi - Changes a string to an int
  * @s: the string being converted
- * Return: (0) if no numbers in string, ELSE converted number 
+ * Return: (0) if no numbers in string, ELSE converted number
  *       -1 on error
  */
 int _erratoi(char *s)
@@ -12,7 +12,7 @@ int _erratoi(char *s)
 	unsigned long int result = 0;
 
 	if (*s == '+')
-		s++;  
+		s++;
 	for (i = 0;  s[i] != '\0'; i++)
 	{
 		if (s[i] >= '0' && s[i] <= '9')
