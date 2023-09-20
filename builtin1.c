@@ -44,9 +44,9 @@ int unset_alias(info_t *info, char *str)
  */
 int set_alias(info_t *info, char *str)
 {
-	char *q;
+	char *q = NULL;
 
-	p = _strchr(str, '=');
+	q = _strchr(str, '=');
 	if (!q)
 		return (1);
 	if (!*++q)

@@ -14,7 +14,7 @@
 
 /* 0converting number */
 #define CONVERT_LOWERCASE	1
-#define CONVERT_UNSIGNED	2_
+#define CONVERT_UNSIGNED  2
 
 /* Check if using system getline() return 1*/
 #define USE_GETLINE 0
